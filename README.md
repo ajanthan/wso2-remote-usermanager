@@ -2,7 +2,7 @@
 This is a usermanager for WSO2 products that can use other WSO2 instance as a userstore
 
 ## Userstore configuration
-Build the maven project and copy the jar to WSO2_HOME/repository/components/dropins. Add following configurations to WSO2_HOME/repository/conf/user-mgt.xml
+Build the maven project and copy the jar to WSO2_HOME/repository/components/dropins. Add following configurations to WSO2_HOME/repository/conf/user-mgt.xml([Sample config](config/user-mgt.xml))
 
 #### User manager configuration 
 
