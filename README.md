@@ -23,9 +23,5 @@ Build the maven project and copy the jar to WSO2_HOME/repository/components/drop
 #### Authorization manager configuration
 
 ```xml
-<AuthorizationManager class="org.wso2.identity.remote.userstore.WSO2RemoteAuthorizationManager">
-    <Property name="AdminRoleManagementPermissions">/permission</Property>
-    <Property name="AuthorizationCacheEnabled">true</Property>
-    <Property name="GetAllRolesOfUserEnabled">false</Property>
-</AuthorizationManager>
+<AuthorizationManager class="org.wso2.identity.remote.userstore.WSO2RemoteAuthorizationManager"/>
 ```
