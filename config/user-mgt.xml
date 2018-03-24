@@ -15,31 +15,31 @@
   ~ limitations under the License.
   -->
 <UserManager>
-    <Realm>
-        <Configuration>
-            <AddAdmin>false</AddAdmin>
-            <AdminRole>admin</AdminRole>
-            <AdminUser>
-                <UserName>apiAdmin</UserName>
-                <Password>Admin@123</Password>
-            </AdminUser>
-            <EveryOneRoleName>everyone</EveryOneRoleName>
-            <!-- By default users in this role sees the registry root -->
-            <Property name="isCascadeDeleteEnabled">true</Property>
-            <Property name="initializeNewClaimManager">true</Property>
-            <Property name="dataSource">jdbc/WSO2CarbonDB</Property>
-        </Configuration>
-         <UserStoreManager class="org.wso2.identity.remote.userstore.WSO2RemoteUserStoreManger">
-<Property name="TenantManager">org.wso2.carbon.user.core.tenant.JDBCTenantManager</Property>  
- <Property name="remoteUserName">admin</Property>
-   <Property name="password">admin</Property>
-   <Property name="serverUrls">https://localhost:9443/services</Property>
-   <Property name="PasswordJavaScriptRegEx">^[\S]{5,30}$</Property>
-   <Property name="UserNameJavaScriptRegEx">^[\S]{3,30}$</Property>
-   <Property name="RoleNameJavaScriptRegEx">^[\S]{3,30}$</Property>
-   <Property name="Disabled">false</Property>
-   <Property name="Description"/>
-</UserStoreManager>
-	<AuthorizationManager class="org.wso2.identity.remote.userstore.WSO2RemoteAuthorizationManager"/>
-    </Realm>
+   <Realm>
+      <Configuration>
+         <AddAdmin>false</AddAdmin>
+         <AdminRole>admin</AdminRole>
+         <AdminUser>
+            <UserName>apiAdmin</UserName>
+            <Password>Admin@123</Password>
+         </AdminUser>
+         <EveryOneRoleName>everyone</EveryOneRoleName>
+         <!-- By default users in this role sees the registry root -->
+         <Property name="isCascadeDeleteEnabled">true</Property>
+         <Property name="initializeNewClaimManager">true</Property>
+         <Property name="dataSource">jdbc/WSO2CarbonDB</Property>
+      </Configuration>
+      <UserStoreManager class="org.wso2.identity.remote.userstore.WSO2RemoteUserStoreManger">
+         <Property name="TenantManager">org.wso2.carbon.user.core.tenant.JDBCTenantManager</Property>
+         <Property name="remoteUserName">admin</Property>
+         <Property name="password">admin</Property>
+         <Property name="serverUrls">https://localhost:9443/services</Property>
+         <Property name="PasswordJavaScriptRegEx">^[\S]{5,30}$</Property>
+         <Property name="UserNameJavaScriptRegEx">^[\S]{3,30}$</Property>
+         <Property name="RoleNameJavaScriptRegEx">^[\S]{3,30}$</Property>
+         <Property name="Disabled">false</Property>
+         <Property name="Description" />
+      </UserStoreManager>
+      <AuthorizationManager class="org.wso2.identity.remote.userstore.WSO2RemoteAuthorizationManager" />
+   </Realm>
 </UserManager>
